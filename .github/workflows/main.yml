@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: SonarQube Scan
-      uses: kitabisa/sonarqube-action@master
+      uses: ./
       with:
         host: ${{secrets.SONAR_URL}}
         login: ${{secrets.SONAR_TOKEN}}
